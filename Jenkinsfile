@@ -25,5 +25,10 @@ stages {
                 }
             }
         }
+        stage ('Run Jar') {
+            steps {
+                sh 'java -jar java-app/target/*.jar'
+            }
+        }
     }
 }
